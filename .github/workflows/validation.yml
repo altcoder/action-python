@@ -1,0 +1,35 @@
+name: Python
+on:
+  workflow_call:    
+    inputs:
+      workdir:
+        type: string
+        default: src
+      testdir:
+        type: string
+        default: tests
+      python-version: 
+        type: string
+        default: 3.11.3
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        tools: ['black', 'bandit', 'pylint', 'flake8']
+        include:
+          - tools: pytest
+            args: -m not integration and not gpu
+          - tools: pytest
+            args: -m integration
+    steps:
+      - uses: actions/checkout@v4
+      - name: ${{ matrix.tools }}
+        uses: ac-analytics/action-python@v0.1.1
+        with:
+          ${{ matrix.tools }}: true
+          args: ${{ matrix.args }}
+          workdir: ${{ inputs.workdir }}
+          testdir: ${{ inputs.testdir }}
+          python_version: ${{ inputs.python-version }}
