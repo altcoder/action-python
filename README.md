@@ -1,9 +1,9 @@
 # action-python
-[![Test](https://github.com/ac-analytics/action-python/workflows/Test/badge.svg)](https://github.com/ac-analytics/action-python/actions?query=workflow%3ATest)
-[![reviewdog](https://github.com/ac-analytics/action-python/workflows/reviewdog/badge.svg)](https://github.com/ac-analytics/action-python/actions?query=workflow%3Areviewdog)
-[![depup](https://github.com/ac-analytics/action-python/workflows/depup/badge.svg)](https://github.com/ac-analytics/action-python/actions?query=workflow%3Adepup)
-[![release](https://github.com/ac-analytics/action-python/workflows/release/badge.svg)](https://github.com/ac-analytics/action-python/actions?query=workflow%3Arelease)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/ac-analytics/action-python?logo=github&sort=semver)](https://github.com/ac-analytics/action-python/releases)
+[![Test](https://github.com/altcoder/action-python/workflows/Test/badge.svg)](https://github.com/altcoder/action-python/actions?query=workflow%3ATest)
+[![reviewdog](https://github.com/altcoder/action-python/workflows/reviewdog/badge.svg)](https://github.com/altcoder/action-python/actions?query=workflow%3Areviewdog)
+[![depup](https://github.com/altcoder/action-python/workflows/depup/badge.svg)](https://github.com/altcoder/action-python/actions?query=workflow%3Adepup)
+[![release](https://github.com/altcoder/action-python/workflows/release/badge.svg)](https://github.com/altcoder/action-python/actions?query=workflow%3Arelease)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/altcoder/action-python?logo=github&sort=semver)](https://github.com/altcoder/action-python/releases)
 [![action-bumpr supported](https://img.shields.io/badge/bumpr-supported-ff69b4?logo=github&link=https://github.com/haya14busa/action-bumpr)](https://github.com/haya14busa/action-bumpr)
 
 This repo contains a action to run various Python tools including:
@@ -110,27 +110,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Black
-        uses: ac-analytics/action-python@0.7.0
+        uses: altcoder/action-python@0.1.0
         with:
           black: true
 
       - name: Bandit
-        uses: ac-analytics/action-python@0.7.0
+        uses: altcoder/action-python@0.1.0
         with:          
           bandit: true
 
       - name: Pylint
-        uses: ac-analytics/action-python@0.7.0
+        uses: altcoder/action-python@0.1.0
         with:
           pylint: true
           
       - name: Pyright
-        uses: ac-analytics/action-python@0.7.0
+        uses: altcoder/action-python@0.1.0
         with:          
           pyright: true
           
       - name: Flake8
-        uses: ac-analytics/action-python@0.7.0
+        uses: altcoder/action-python@0.1.0
         with:          
           flake8: true
 
@@ -138,7 +138,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:    
       - name: Pytest
-        uses: ac-analytics/action-python@0.7.0
+        uses: altcoder/action-python@0.1.0
         with:          
           testing: true
 ```
