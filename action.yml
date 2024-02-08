@@ -186,7 +186,7 @@ runs:
         python -m pytest '${{ inputs.args }}' ${{ inputs.testdir }}
 
     - if: ${{ inputs.pytest == 'true' && inputs.coverage == 'true' }}
-      uses: codecov/codecov-action@v3 
+      uses: codecov/codecov-action@v4 
       with:
         flags: ${{ inputs.flags }}
 
