@@ -1,7 +1,6 @@
 # action-python
 [![Test](https://github.com/altcoder/action-python/workflows/Test/badge.svg)](https://github.com/altcoder/action-python/actions?query=workflow%3ATest)
 [![reviewdog](https://github.com/altcoder/action-python/workflows/reviewdog/badge.svg)](https://github.com/altcoder/action-python/actions?query=workflow%3Areviewdog)
-[![depup](https://github.com/altcoder/action-python/workflows/depup/badge.svg)](https://github.com/altcoder/action-python/actions?query=workflow%3Adepup)
 [![release](https://github.com/altcoder/action-python/workflows/release/badge.svg)](https://github.com/altcoder/action-python/actions?query=workflow%3Arelease)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/altcoder/action-python?logo=github&sort=semver)](https://github.com/altcoder/action-python/releases)
 [![action-bumpr supported](https://img.shields.io/badge/bumpr-supported-ff69b4?logo=github&link=https://github.com/haya14busa/action-bumpr)](https://github.com/haya14busa/action-bumpr)
