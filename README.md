@@ -1,5 +1,5 @@
 # action-python
-[![Test](https://github.com/altcoder/action-python/workflows/Test/badge.svg)](https://github.com/altcoder/action-python/actions?query=workflow%3ATest)
+[![test](https://github.com/altcoder/action-python/workflows/test/badge.svg)](https://github.com/altcoder/action-python/actions?query=workflow%3Atest)
 [![reviewdog](https://github.com/altcoder/action-python/workflows/reviewdog/badge.svg)](https://github.com/altcoder/action-python/actions?query=workflow%3Areviewdog)
 [![release](https://github.com/altcoder/action-python/workflows/release/badge.svg)](https://github.com/altcoder/action-python/actions?query=workflow%3Arelease)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/altcoder/action-python?logo=github&sort=semver)](https://github.com/altcoder/action-python/releases)
