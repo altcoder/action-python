@@ -109,37 +109,37 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Black
-        uses: altcoder/action-python@0.1.0
+        uses: altcoder/action-python@0.1.1
         with:
-          black: true
+          python_tool: 'black'
 
       - name: Bandit
-        uses: altcoder/action-python@0.1.0
+        uses: altcoder/action-python@0.1.1
         with:          
-          bandit: true
+          python_tool: 'bandit'
 
       - name: Pylint
-        uses: altcoder/action-python@0.1.0
+        uses: altcoder/action-python@0.1.1
         with:
-          pylint: true
+          python_tool: 'pylint'
           
       - name: Pyright
-        uses: altcoder/action-python@0.1.0
+        uses: altcoder/action-python@0.1.1
         with:          
-          pyright: true
+          python_tool: 'pyright'
           
       - name: Flake8
-        uses: altcoder/action-python@0.1.0
+        uses: altcoder/action-python@0.1.1
         with:          
-          flake8: true
+          python_tool: 'flake8'
 
   testing:
     runs-on: ubuntu-latest
     steps:    
       - name: Pytest
-        uses: altcoder/action-python@0.1.0
+        uses: altcoder/action-python@0.1.1
         with:          
-          testing: true
+          python_tool: 'pytest'
 ```
 
 ## Development

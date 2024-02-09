@@ -1,4 +1,4 @@
-name: Python
+name: validation
 on:
   workflow_call:    
     inputs:
@@ -26,9 +26,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: ${{ matrix.tools }}
-        uses: ac-analytics/action-python@v0.1.1
+        uses: altcoder/action-python@v0.1
         with:
-          ${{ matrix.tools }}: true
+          python_tool: ${{ matrix.tools }}
           args: ${{ matrix.args }}
           workdir: ${{ inputs.workdir }}
           testdir: ${{ inputs.testdir }}
