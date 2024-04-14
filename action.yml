@@ -170,7 +170,7 @@ runs:
         workdir: ${{ inputs.root }}/${{ inputs.workdir }}
 
     - if: ${{ inputs.python_tool == 'pyright' || inputs.pyright == 'true' }}
-      uses: jakebailey/pyright-action@v2.0.1
+      uses: jakebailey/pyright-action@v2.3.1
       with:
         working-directory: ${{ inputs.root }}
         project: ${{ inputs.toml }}
