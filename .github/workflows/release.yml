@@ -20,7 +20,8 @@ jobs:
       # Bump version on merging Pull Requests with specific labels.
       # (bump:major,bump:minor,bump:patch)
       - id: bumpr
-        if: '!startsWith(github.ref, "refs/tags/")'
+        # NOTE: do not fix the quotes as it will break the builds
+        if: "!startsWith(github.ref, 'refs/tags/')"
         uses: haya14busa/action-bumpr@v1
 
       # Update corresponding major and minor tag.
@@ -40,7 +41,8 @@ jobs:
 
       # Create release.
       - uses: shogo82148/actions-create-release@v1
-        if: steps.tag.outputs.value != ''
+        # NOTE: do not fix the quotes as it will break the builds
+        if: "steps.tag.outputs.value != ''"
         with:
           # This token is provided by Actions, you do not need to create your own token
           github_token: ${{ secrets.GITHUB_TOKEN }}
