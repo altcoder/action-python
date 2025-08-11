@@ -13,12 +13,12 @@ jobs:
         python-version: ['3.10']
     steps:
       # Checkout this repo and template project for validation testing.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with: 
           repository: altcoder/template-python
           path: pyproject
           clean: true
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           path: pyaction
           clean: true
