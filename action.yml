@@ -150,7 +150,7 @@ runs:
         workdir: ${{ inputs.root }}/${{ inputs.workdir }}
 
     - if: ${{ inputs.python_tool== 'pylint' || inputs.pylint == 'true' }}
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: ${{ inputs.python_version }}
         cache: 'pip' # caching pip dependencies
@@ -177,7 +177,7 @@ runs:
         project: ${{ inputs.toml }}
 
     - if: ${{ inputs.python_tool == 'pytest' || inputs.pytest == 'true' || inputs.pypi_publish  == 'true' }}
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: ${{ inputs.python_version }}
         cache: 'pip' # caching pip dependencies
