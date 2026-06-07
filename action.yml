@@ -192,7 +192,7 @@ runs:
         python -m pytest '${{ inputs.args }}' ${{ inputs.testdir }}
 
     - if: ${{ (inputs.python_tool == 'pytest' || inputs.pytest == 'true') && inputs.coverage == 'true' }}
-      uses: codecov/codecov-action@v4 
+      uses: codecov/codecov-action@v7 
       with:
         flags: ${{ inputs.flags }}
 
